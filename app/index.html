@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="ngViewEffects">
+<head>
+	<meta charset="utf-8">
+	<title>ngView Animation Effects</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/app.css"/>	
+</head>
+<body>
+
+	<a href="https://github.com/dfsq/ngView-animation-effects"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+
+	<div class="container" ng-controller="indexController">
+
+		<div class="header">
+			<ul class="nav nav-pills pull-right">
+				<li class="active"><a href="#">Effects</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+			<h3 class="text-muted">AngularJS ngView Animation Effects</h3>
+		</div>
+
+		<div class="jumbotron content">
+			<div ng-view ng-class="[selectedEffect, 'page-' + pageId]" class="page"></div>
+		</div>
+
+		<div class="row marketing">
+			<div class="col-lg-6">
+				<h4>Select effect</h4>
+				<select class="form-control" ng-model="selectedEffect" ng-options="e.className as e.name for e in effects"></select>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>&copy; Aliaksandr Astashenkau 2013</p>
+		</div>
+
+	</div>
+
+	<script src="lib/angular/angular.js"></script>
+	<script src="lib/angular/angular-route.min.js"></script>
+	<script src="lib/angular/angular-animate.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers/indexController.js"></script>
+	<script src="js/controllers/pageController.js"></script>
+</body>
+</html>
