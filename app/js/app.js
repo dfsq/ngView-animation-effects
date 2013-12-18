@@ -11,6 +11,10 @@ app.config(function($routeProvider) {
                 return 'views/page' + params.pageId + '.html';
             }
         })
+        .when('/about', {
+        	templateUrl: 'views/about.html',
+        	controller:  'aboutController'
+        })
         .otherwise({
         	redirectTo: '/page/1'
         });

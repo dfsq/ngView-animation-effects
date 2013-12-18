@@ -92,12 +92,12 @@ body {
 	position: absolute;
 	padding: 30px;
 }
-.content .page-2:last-of-type {
+/*.content .page-2:last-of-type {
 	background: coral;
 }
 .content .page-3:last-of-type {
 	background: darkseagreen;
-}
+}*/
 
 /* Slide animation */
 .content .page.slide {    
@@ -212,4 +212,32 @@ body {
 }
 .content .page.pop.ng-leave-active {
     background: #DDD;
+}
+
+
+/* Fade in/out */
+.content .page.fade {
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 1;
+}
+.content .page.fade.ng-enter,
+.content .page.fade.ng-leave {
+    -webkit-transition: opacity 1s ease;
+    -moz-transition:opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+.content .page.fade.ng-enter {
+    opacity: 0;
+}
+.content .page.fade.ng-enter-active {
+    opacity: 1;
+}
+.content .page.fade.ng-leave {
+    opacity: 1;
+}
+.content .page.fade.ng-leave-active {
+    opacity: 0;
 }
