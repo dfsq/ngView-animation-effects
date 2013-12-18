@@ -1,4 +1,4 @@
-app.controller('indexController', ['$scope', function($scope) {
+app.controller('indexController', ['$scope', '$route', function($scope, $route) {
 
 	// All effects list
     $scope.effects = [
@@ -10,5 +10,10 @@ app.controller('indexController', ['$scope', function($scope) {
     ];
 
     $scope.selectedEffect = $scope.effects[0].className;
+
+	// Current menu item
+	$scope.isActive = function(path) {
+		return $route.current && path === $route.current.$$route.originalPath;
+	};
     
 }]);

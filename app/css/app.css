@@ -87,17 +87,16 @@ body {
 	min-height: 400px;
 	padding: 0;
 }
+.container .content.page-about {
+	min-height: 450px;
+}
 
 .content .page {
 	position: absolute;
 	padding: 30px;
+	background: #EEE;
 }
-/*.content .page-2:last-of-type {
-	background: coral;
-}
-.content .page-3:last-of-type {
-	background: darkseagreen;
-}*/
+
 
 /* Slide animation */
 .content .page.slide {    
@@ -124,6 +123,7 @@ body {
 }
 .content .page.slide.ng-leave-active {
     left: -100%;
+	background: #FEFEFE;
 }
 
 
@@ -151,6 +151,7 @@ body {
 }
 .content .page.slidedown.ng-leave-active {
     top: 100%;
+	background: #FEFEFE;
 }
 
 
@@ -162,10 +163,10 @@ body {
 }
 .content .page.slideup.ng-enter,
 .content .page.slideup.ng-leave {
-    -webkit-transition: top 1s ease;
-    -moz-transition:top 1s ease;
-    -o-transition: top 1s ease;
-    transition: top 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 .content .page.slideup.ng-enter {
     top: 100%;
@@ -178,10 +179,11 @@ body {
 }
 .content .page.slideup.ng-leave-active {
     top: -100%;
+	background: #FEFEFE;
 }
 
 
-/* Popin-out animation */
+/* Pop in/out animation */
 .content .page.pop {
     position: absolute;
     left: 0; right: 0;
@@ -211,7 +213,7 @@ body {
     transform: scale(1);
 }
 .content .page.pop.ng-leave-active {
-    background: #DDD;
+    background: #FEFEFE;
 }
 
 
@@ -224,10 +226,10 @@ body {
 }
 .content .page.fade.ng-enter,
 .content .page.fade.ng-leave {
-    -webkit-transition: opacity 1s ease;
-    -moz-transition:opacity 1s ease;
-    -o-transition: opacity 1s ease;
-    transition: opacity 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 .content .page.fade.ng-enter {
     opacity: 0;
@@ -240,4 +242,5 @@ body {
 }
 .content .page.fade.ng-leave-active {
     opacity: 0;
+	background: #FEFEFE;
 }
