@@ -13,7 +13,7 @@ app.controller('indexController', ['$scope', '$route', function($scope, $route) 
 
 	// Current menu item
 	$scope.isActive = function(path) {
-		return $route.current && path === $route.current.$$route.originalPath;
+		return $route.current && $route.current.regexp.test(path);
 	};
     
 }]);
