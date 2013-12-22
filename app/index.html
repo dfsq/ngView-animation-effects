@@ -21,13 +21,16 @@
 		</div>
 
 		<div class="jumbotron content">
-			<div ng-view ng-class="[selectedEffect, pageClass]" class="page"></div>
+			<div ng-view ng-class="[effect, pageClass]" class="page"></div>
 		</div>
 
 		<div class="row marketing">
-			<div class="col-lg-6">
-				<h4>Animation Effect</h4>
-				<select class="form-control" ng-model="selectedEffect" ng-options="e.className as e.name for e in effects"></select>
+			<h4>Animation Effect</h4>
+			<div class="col col-lg-6 col-md-6 col-sm-6">
+				<select class="form-control" ng-model="effect" ng-options="e.className as e.name for e in effects"></select>
+			</div>
+			<div class="col col-lg-6 col-md-6 col-sm-6">
+				<a class="btn btn-info" href="#/code">View Code</a>
 			</div>
 		</div>
 
@@ -57,5 +60,6 @@
 	<script src="js/controllers/indexController.js"></script>
 	<script src="js/controllers/pageController.js"></script>
 	<script src="js/controllers/aboutController.js"></script>
+	<script src="js/controllers/codeController.js"></script>
 </body>
 </html>

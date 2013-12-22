@@ -1,5 +1,5 @@
 app.controller('pageController', function($scope, $location, $routeParams) {
-    
+
     $scope.pageId = $routeParams.pageId || 1;
     
     $scope.nextPage = function() {
