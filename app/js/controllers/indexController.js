@@ -9,11 +9,10 @@ app.controller('indexController', ['$scope', '$route', function($scope, $route) 
         {name: 'Fade in/out', className: 'fade'}
     ];
 
-    $scope.selectedEffect = $scope.effects[0].className;
+	$scope.effect = $scope.effects[0].className;
 
 	// Current menu item
 	$scope.isActive = function(path) {
-		return $route.current && path === $route.current.$$route.originalPath;
+		return $route.current && $route.current.regexp.test(path);
 	};
-    
 }]);

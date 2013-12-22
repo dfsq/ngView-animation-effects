@@ -51,13 +51,15 @@ body {
 	padding: 14px 24px;
 }
 
+
 /* Supporting marketing content */
 .marketing {
-	margin: 40px 0;
+	margin: 20px 0 50px;
 }
-.marketing p + h4 {
-	margin-top: 28px;
+.marketing .col {
+	padding-left: 0;
 }
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -81,15 +83,51 @@ body {
 
 
 /* Content and animation styles */
-.container {
-	-webkit-perspective: 800px;
-}
+.container {}
 .container .content {
 	position: relative;
 	overflow: hidden;
 	min-height: 400px;
 	padding: 0;
+	margin-bottom: 0;
 }
+
+
+/* Page code */
+.container .content .page-code {
+	font-size: 14px;
+	text-align: left;
+}
+.container .content .page-code .pre {
+	position: relative;
+}
+.container .content .page-code .pre:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 28px;
+	padding: 2px 4px 0px 6px;
+	text-align: center;
+	color: #C0C0C0;
+	font-weight: bold;
+}
+.container .content .page-code .pre-html:after {
+	content: 'HTML';
+}
+.container .content .page-code .pre-css {
+	position: absolute;
+	top: 80px;
+	bottom: 30px;
+	margin: 0;
+	left: 30px;
+	right: 30px;
+	overflow: auto;
+}
+.container .content .page-code .pre-css:after {
+	content: 'CSS';
+}
+
+
 .container .content.page-about {
 	min-height: 450px;
 }
@@ -250,6 +288,9 @@ body {
 
 
 /* Flip animation */
+.container {
+	-webkit-perspective: 1000;
+}
 .content {
 	-webkit-transform-style: preserve-3d;
 	-webkit-transition: -webkit-transform 1s;
