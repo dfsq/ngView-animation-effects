@@ -1,0 +1,26 @@
+<pre class="pre pre-html">&lt;div ng-view class="flip"&gt;&lt;/div&gt;</pre>
+
+<pre class="pre pre-css">
+/* -moz, -o- prefexies are skipped */
+.content {
+	-webkit-transition: -webkit-transform 1s;
+	-webkit-perspective: 600px;
+}
+.content .flip {
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 1s ease-in-out;
+}
+.content .flip.ng-enter {
+    -webkit-transform: rotateY(-180deg);
+}
+.content .flip.ng-enter-active {
+	-webkit-transform: rotateY(0deg);
+}
+.content .flip.ng-leave {
+	-webkit-transform: rotateY(0deg);
+}
+.content .flip.ng-leave-active {
+	-webkit-transform: rotateY(180deg);
+}
+</pre>
