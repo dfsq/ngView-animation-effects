@@ -128,6 +128,11 @@ body {
 .container .content .page-code .pre-css:after {
 	content: 'CSS';
 }
+.container .content .page-code .back {
+	position: absolute;
+	top: 0;
+	right: 8px;
+}
 
 
 .container .content.page-about {
