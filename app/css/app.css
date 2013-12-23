@@ -46,10 +46,6 @@ body {
 	text-align: center;
 	border-bottom: 1px solid #e5e5e5;
 }
-.jumbotron .btn {
-	font-size: 21px;
-	padding: 14px 24px;
-}
 
 
 /* Supporting marketing content */
@@ -80,6 +76,27 @@ body {
 	}
 }
 
+
+/* Pages styles */
+.content .page {
+	position: absolute;
+	padding: 30px;
+	background: #EEE;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+}
+
+/* Page specific styles */
+.content .page-1 {
+	color: #CCC;
+	background: #000 url(../img/john_coltrane.jpg) no-repeat 110px 0;
+	background-size: cover;
+	font-size: 14px;
+}
+.content .page-1 p {
+	width: 300px;
+}
 
 
 /* Content and animation styles */
@@ -135,15 +152,11 @@ body {
 }
 
 
-.container .content.page-about {
-	min-height: 450px;
+/* Page About */
+.container .content .page-about {
+	text-align: center;
 }
 
-.content .page {
-	position: absolute;
-	padding: 30px;
-	background: #EEE;
-}
 
 
 /* Slide animation */
@@ -171,7 +184,6 @@ body {
 }
 .content .page.slide.ng-leave-active {
     left: -100%;
-	background: #FEFEFE;
 }
 
 
@@ -199,7 +211,6 @@ body {
 }
 .content .page.slidedown.ng-leave-active {
     top: 100%;
-	background: #FEFEFE;
 }
 
 
@@ -227,7 +238,6 @@ body {
 }
 .content .page.slideup.ng-leave-active {
     top: -100%;
-	background: #FEFEFE;
 }
 
 
@@ -260,9 +270,7 @@ body {
     -o-transform: scale(1);
     transform: scale(1);
 }
-.content .page.pop.ng-leave-active {
-    background: #FEFEFE;
-}
+.content .page.pop.ng-leave-active {}
 
 
 /* Fade in/out */
@@ -290,7 +298,6 @@ body {
 }
 .content .page.fade.ng-leave-active {
     opacity: 0;
-	background: #FEFEFE;
 }
 
 
@@ -337,7 +344,6 @@ body {
 	-moz-transform: rotateY(180deg);
 	-o-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-	background: #FEFEFE;
 }
 
 
