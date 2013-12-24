@@ -6,7 +6,8 @@ app.controller('indexController', ['$scope', '$route', function($scope, $route) 
         {name: 'Slidedown', className: 'slidedown'},
         {name: 'Slideup', className: 'slideup'},
         {name: 'Pop in/out', className: 'pop'},
-        {name: 'Fade in/out', className: 'fade'}
+        {name: 'Fade in/out', className: 'fade'},
+        {name: 'Flip', className: 'flip'}
     ];
 
 	$scope.effect = $scope.effects[0].className;
