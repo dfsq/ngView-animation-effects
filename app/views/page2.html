@@ -1,7 +1,10 @@
-<h1>#2 See Shore</h1>
-
-<p class="lead">Explicabo, temporibus nihil enim vero consequuntur fugiat itaque saepe impedit accusantium ab suscipit odit praesentium distinctio ipsa nostrum laudantium est sint autem sit quia. Quaerat, ab ad doloremque molestiae aliquid?</p>
-
+<h3>New York Weather</h3>
 <p>
-	<a class="btn btn-lg btn-success" ng-click="nextPage()" role="button">Next page</a>
+	Temperature: {{weather.currently.temperature}}&deg;F <br>
+	Humidity: {{weather.currently.humidity * 100}}% <br>
+	Pressure: {{weather.currently.pressure}} millibars<br>
+	Wind speed: {{weather.currently.windSpeed}} mph <br>
+	Summary: {{weather.currently.summary}} <br><br>
+	Daily summary: {{weather.daily.summary}}
 </p>
+<p><a class="btn btn-md btn-success" ng-click="nextPage()" role="button">Next page</a></p>
