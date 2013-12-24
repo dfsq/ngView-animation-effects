@@ -107,6 +107,19 @@ body {
 	font-size: 16px;
 }
 
+/* Page "Mondrian" */
+.content .page-3 h1 {
+	color: #421919;
+}
+.content .page-3 {
+	background: url(../img/mondrian.jpg) no-repeat 0 0;
+	font-size: 14px;
+}
+.content .page-3 .info {
+	margin-top: 70px;
+	width: 540px;
+}
+
 
 /* Content and animation styles */
 .container {}
