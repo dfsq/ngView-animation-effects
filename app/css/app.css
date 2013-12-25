@@ -208,6 +208,19 @@ body {
     left: -100%;
 }
 
+.reverse .page.slide.ng-enter {
+	left: -100%;
+}
+.reverse .page.slide.ng-enter-active {
+	left: 0;
+}
+.reverse .page.slide.ng-leave {
+	left: 0;
+}
+.reverse .page.slide.ng-leave-active {
+	left: 100%;
+}
+
 
 /* Slidedown */
 .content .page.slidedown {
