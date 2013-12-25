@@ -247,7 +247,18 @@ body {
 .content .page.slidedown.ng-leave-active {
     top: 100%;
 }
-
+.reverse .page.slidedown.ng-enter {
+	top: 100%;
+}
+.reverse .page.slidedown.ng-enter-active {
+	top: 0;
+}
+.reverse .page.slidedown.ng-leave {
+	top: 0;
+}
+.reverse .page.slidedown.ng-leave-active {
+	top: -100%;
+}
 
 /* Slideup */
 .content .page.slideup {
@@ -273,6 +284,18 @@ body {
 }
 .content .page.slideup.ng-leave-active {
     top: -100%;
+}
+.reverse .page.slideup.ng-enter {
+	top: -100%;
+}
+.reverse .page.slideup.ng-enter-active {
+	top: 0;
+}
+.reverse .page.slideup.ng-leave {
+	top: 0;
+}
+.reverse .page.slideup.ng-leave-active {
+	top: 100%;
 }
 
 
