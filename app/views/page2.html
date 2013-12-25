@@ -1,7 +1,7 @@
 <h3>New York Weather</h3>
 <p>
 	Temperature: {{weather.currently.temperature}}&deg;F <br>
-	Humidity: {{weather.currently.humidity * 100}}% <br>
+	Humidity: {{weather.currently.humidity * 100 | number}}% <br>
 	Pressure: {{weather.currently.pressure}} millibars<br>
 	Wind speed: {{weather.currently.windSpeed}} mph <br>
 	Summary: {{weather.currently.summary}} <br><br>

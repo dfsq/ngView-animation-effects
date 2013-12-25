@@ -348,24 +348,28 @@ body {
     -moz-transform: rotateY(-180deg);
     -o-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
+	z-index: 800;
 }
 .content .page.flip.ng-enter-active {
 	-webkit-transform: rotateY(0deg);
 	-moz-transform: rotateY(0deg);
 	-o-transform: rotateY(0deg);
 	transform: rotateY(0deg);
+	z-index: 900;
 }
 .content .page.flip.ng-leave {
 	-webkit-transform: rotateY(0deg);
 	-moz-transform: rotateY(0deg);
 	-o-transform: rotateY(0deg);
 	transform: rotateY(0deg);
+	z-index: 900;
 }
 .content .page.flip.ng-leave-active {
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
 	-o-transform: rotateY(180deg);
 	transform: rotateY(180deg);
+	z-index: 800;
 }
 
 
