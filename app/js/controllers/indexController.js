@@ -16,6 +16,9 @@ app.controller('indexController', ['$scope', '$route', function($scope, $route) 
 
 	// Current menu item
 	$scope.isActive = function(path) {
-		return $route.current && $route.current.regexp.test(path);
+		if ($route.current && $route.current.regexp) {
+			return $route.current && $route.current.regexp.test(path);
+		}
+		return false;
 	};
 }]);
