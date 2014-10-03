@@ -4,6 +4,17 @@ body {
 	padding-bottom: 20px;
 }
 
+/* Redefining bootstrap styles */
+.container .jumbotron,
+.nav-pills > li > a,
+.btn, .form-control, pre {
+	border-radius: 0;
+}
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+	background: #FFF;
+}
+
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -84,7 +95,7 @@ body {
 .content .page {
 	position: absolute;
 	padding: 30px;
-	background: #EEE;
+	background: #CBE0CF;
 	text-align: left;
 	width: 100%;
 	height: 100%;
@@ -154,6 +165,8 @@ body {
 }
 .container .content .page-code .pre-html:after {
 	content: 'HTML';
+	top: -2px;
+	right: 10px;
 }
 .container .content .page-code .pre-css {
 	position: absolute;
@@ -166,11 +179,18 @@ body {
 }
 .container .content .page-code .pre-css:after {
 	content: 'CSS';
+	right: 9px;
 }
 .container .content .page-code .back {
 	position: absolute;
-	top: 0;
-	right: 8px;
+	top: -2px;
+	right: 12px;
+	font-size: 20px;
+}
+.container .content .page-code small {
+	position: absolute;
+	bottom: 1px;
+	color: #444;
 }
 
 
