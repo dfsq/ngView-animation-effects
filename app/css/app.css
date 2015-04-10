@@ -211,8 +211,6 @@ body {
 .content .page.slide.ng-enter,
 .content .page.slide.ng-leave {
     -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 .content .page.slide.ng-enter {
@@ -251,8 +249,6 @@ body {
 .content .page.slidedown.ng-enter,
 .content .page.slidedown.ng-leave {
     -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 .content .page.slidedown.ng-enter {
@@ -289,8 +285,6 @@ body {
 .content .page.slideup.ng-enter,
 .content .page.slideup.ng-leave {
     -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 .content .page.slideup.ng-enter {
@@ -328,24 +322,16 @@ body {
 .content .page.pop.ng-enter,
 .content .page.pop.ng-leave {
     -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 .content .page.pop.ng-enter {
     -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
     transform: scale(0);
 }
 .content .page.pop.ng-enter-active,
 .content .page.pop.ng-leave,
 .content .page.pop.ng-leave-active {
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
     transform: scale(1);
 }
 .content .page.pop.ng-leave-active {}
@@ -361,8 +347,6 @@ body {
 .content .page.fade.ng-enter,
 .content .page.fade.ng-leave {
     -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 .content .page.fade.ng-enter {
@@ -382,48 +366,33 @@ body {
 /* Flip animation */
 .content {
 	-webkit-perspective: 600px;
-	-moz-perspective: 600px;
 	perspective: 600px;
 }
 .content .page.flip {
 	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
 	backface-visibility: hidden;
 	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 .content .page.flip.ng-enter {
     -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
 	z-index: 800;
 }
 .content .page.flip.ng-enter-active {
 	-webkit-transform: rotateY(0deg);
-	-moz-transform: rotateY(0deg);
-	-o-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 	z-index: 900;
 }
 .content .page.flip.ng-leave {
 	-webkit-transform: rotateY(0deg);
-	-moz-transform: rotateY(0deg);
-	-o-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 	z-index: 900;
 }
 .content .page.flip.ng-leave-active {
 	-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 	z-index: 800;
 }
@@ -432,20 +401,14 @@ body {
 /* Rotate animation */
 .content .page.rotate {
 	-webkit-animation-duration: 1s;
-	-moz-animation-duration: 1s;
-	-o-animation-duration: 1s;
 	animation-duration: 1s;
 }
 .content .page.ng-leave.rotate {
 	-webkit-animation-name: rotate-leave;
-	-moz-animation-name: rotate-leave;
-	-o-animation-name: rotate-leave;
 	animation-name: rotate-leave;
 }
 .content .page.ng-enter.rotate {
 	-webkit-animation-name: rotate-enter;
-	-moz-animation-name: rotate-enter;
-	-o-animation-name: rotate-enter;
 	animation-name: rotate-enter;
 }
 @-webkit-keyframes rotate-leave {
@@ -481,70 +444,31 @@ body {
 	}
 }
 
-@-moz-keyframes rotate-leave {
+@keyframes rotate-leave {
 	0% {
-		-moz-transform-origin: center center;
 		transform-origin: center center;
-		-moz-transform: rotate(0);
 		transform: rotate(0);
 		opacity: 1;
 	}
 	100% {
-		-moz-transform-origin: center center;
 		transform-origin: center center;
-		-moz-transform: rotate(-180deg);
 		transform: rotate(-180deg);
 		opacity: 0;
 	}
 }
-@-moz-keyframes rotate-enter {
+@keyframes rotate-enter {
 	0% {
-		-moz-transform-origin: center center;
 		transform-origin: center center;
-		-moz-transform: rotate(-180deg);
 		transform: rotate(-180deg);
 		opacity: 0;
 	}
 	100% {
-		-moz-transform-origin: center center;
 		transform-origin: center center;
-		-moz-transform: rotate(-360deg);
 		transform: rotate(-360deg);
 		opacity: 1;
 	}
 }
-@-o-keyframes rotate-leave {
-	0% {
-		-o-transform-origin: center center;
-		transform-origin: center center;
-		-o-transform: rotate(0);
-		transform: rotate(0);
-		opacity: 1;
-	}
-	100% {
-		-o-transform-origin: center center;
-		transform-origin: center center;
-		-o-transform: rotate(-180deg);
-		transform: rotate(-180deg);
-		opacity: 0;
-	}
-}
-@-o-keyframes rotate-enter {
-	0% {
-		-o-transform-origin: center center;
-		transform-origin: center center;
-		-o-transform: rotate(-180deg);
-		transform: rotate(-180deg);
-		opacity: 0;
-	}
-	100% {
-		-o-transform-origin: center center;
-		transform-origin: center center;
-		-o-transform: rotate(-360deg);
-		transform: rotate(-360deg);
-		opacity: 1;
-	}
-}
+
 
 
 /* slide-pop screen animation */
@@ -557,24 +481,16 @@ body {
 .content .page.slide-pop.ng-enter,
 .content .page.slide-pop.ng-leave {
 	-webkit-transition: all 1s linear;
-	-moz-transition: all 1s linear;
-	-o-transition: all 1s linear;
 	transition: all 1s linear;
 }
 .content .page.slide-pop.ng-enter {
 	opacity: 0;
 	-webkit-transform: scale(.5);
-	-moz-transform: scale(.5);
-	-ms-transform: scale(.5);
-	-o-transform: scale(.5);
 	transform: scale(.5);
 }
 .content .page.slide-pop.ng-enter-active {
 	opacity: 1;
 	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
 	transform: scale(1);
 }
 .content .page.slide-pop.ng-leave {
@@ -590,9 +506,6 @@ body {
 	opacity: .5;
 	left: -100%;
 	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
 	transform: scale(1);
 }
 .reverse .page.slide-pop.ng-enter-active {
@@ -602,9 +515,6 @@ body {
 .reverse .page.slide-pop.ng-leave {
 	opacity: .5;
 	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
 	transform: scale(1);
 	left: 0;
 	right: 0;
@@ -612,9 +522,6 @@ body {
 .reverse .page.slide-pop.ng-leave-active {
 	opacity: 0;
 	-webkit-transform: scale(.5);
-	-moz-transform: scale(.5);
-	-ms-transform: scale(.5);
-	-o-transform: scale(.5);
 	transform: scale(.5);
 }
 
